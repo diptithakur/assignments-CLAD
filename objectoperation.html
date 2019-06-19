@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIC</title>
+</head>
+<body>
+	<h1>Student Details</h1>
+	<p id="fullname"></p>
+	<p id="standard"></p>
+
+	<script type="text/javascript">
+		studentInfoDisplay();
+
+		function studentInfoDisplay()
+		{
+			var student = { firstName:"Dipti", lastName:"Thakur", standard:12 };
+
+			document.getElementById("fullname").innerHTML = (student.firstName + student.lastName);
+			document.getElementById("standard").innerHTML = student.standard;
+		}
+	</script>
+</body>
+</html>
